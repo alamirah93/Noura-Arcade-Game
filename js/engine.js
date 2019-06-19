@@ -22,7 +22,8 @@ var Engine = (function(global) {
         win = global.window,
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
-        lastTime;
+        lastTime,
+        animation;
 
     canvas.width = 505;
     canvas.height = 606;
@@ -55,7 +56,36 @@ var Engine = (function(global) {
         /* Use the browser's requestAnimationFrame function to call this
          * function again as soon as the browser is able to draw another frame.
          */
-        win.requestAnimationFrame(main);
+         /* I learn about requestAnimationFrame and cancelAnimationFrame from :
+            * https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+        */
+       if (player.winner === true){
+           win.cancelAnimationFrame(animation);
+           /*  I used sweetalert2 to let the alet looks good and I learnd about it from :
+            *   https://code.tutsplus.com/tutorials/creating-pretty-popup-messages-using-sweetalert2--cms-30662
+            *  and https://sweetalert2.github.io/
+            */
+           swal({
+            type: 'success',
+            title: 'Congratulations',
+            text: 'You win with ' ,
+            showConfirmButton: true,
+            showCancelButton: true,
+            confirmButtonText: 'Restart Game?'
+                }).then((result) => {
+                if (result.value) {
+                    player.reset();
+                    player.winner = false;
+                    win.requestAnimationFrame(main);
+                }
+        });
+       } else {
+        animation = win.requestAnimationFrame(main);
+       }
+
+
+
+
     }
 
     /* This function does some initial setup that should only occur once,
@@ -173,7 +203,7 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-pink-girl.png'
     ]);
     Resources.onReady(init);
 

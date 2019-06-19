@@ -1,20 +1,18 @@
-# Classic Arcade Game Clone Project
+# Noura Arcade Game
+Train your skills and s aise your focus with my great arcade games.
 
-## Table of Contents
-
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+## Installation
+- Clone or download the projectwith all directories and main files.
+- Click on index.html and open it in browser to start the game.
 
 ## Instructions
+- Start playing by click kayboard arraws (left, right, up, down).
+- Reach the water to win the game.
+- if you collid with the enemy, it will reset the player to starting position.
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+## Todos
+- Add more players characters.
+- Add scores and make it more difficult.
+- Change the style of the game.
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
-
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+Hope you enjoy playing my game.
