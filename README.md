@@ -1,5 +1,5 @@
 # Noura Arcade Game
-Train your skills and s aise your focus with my great arcade games.
+Train your skills and raise your focus with my great arcade games.
 
 ## Installation
 - Clone or download the projectwith all directories and main files.
