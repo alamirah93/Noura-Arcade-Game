@@ -15,4 +15,9 @@ Train your skills and s aise your focus with my great arcade games.
 - Add scores and make it more difficult.
 - Change the style of the game.
 
+## Technologies Used
+- [Sweet Alert2](https://sweetalert2.github.io/)
+- [Starting code from udacity](https://github.com/udacity/frontend-nanodegree-arcade-game)
+
 Hope you enjoy playing my game.
+
